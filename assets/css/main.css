@@ -1215,7 +1215,7 @@ body {
   height: 100%;
   background-image: url("../img/Dark_Modena2.png");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .contact--lockup {
@@ -1324,6 +1324,8 @@ body {
   margin: 0 0 20px 0;
   font-size: 30px;
   text-align: center;
+  position: relative;
+  bottom: 20px;
 }
 .work-request {
   display: -webkit-box;
@@ -1533,9 +1535,9 @@ body {
 @media (max-width: 600px) and (max-width: 415px) {
   .work-request--options {
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
+    -webkit-justify-content: space-around;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 @media (max-width: 600px) {

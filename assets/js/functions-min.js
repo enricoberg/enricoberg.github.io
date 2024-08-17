@@ -1455,4 +1455,11 @@
     let bigtitle=document.querySelector(".intro--banner h1");
     bigtitle.style.marginBottom="26px";
     bigtitle.style.marginTop="26px";
+    let titlestack=document.querySelectorAll(".about--banner h1");
+    titlestack.forEach(function(element){
+      element.innerHTML="🚀 This is my current stack";
+      element.style.marginTop="35px";
+    })
+    document.querySelector(".disc").style.display="none";
+    document.querySelector(".smileface").style.display="none";
   }
