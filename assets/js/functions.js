@@ -278,3 +278,12 @@ $( document ).ready(function() {
   transitionLabels();
 
 });
+alert(windo.screen.width)
+if(window.screen.width<1000){
+  alert("gfgdfgfd")
+  let paragraphstitle=document.querySelectorAll(".intro--banner p");
+  paragraphstitle.forEach(function(element){
+    element.style.fontSize="8px";
+    element.style.color="red";
+  })
+}
