@@ -1793,3 +1793,14 @@ body {
   }
 
 }
+@media (max-width: 413px) {
+
+  .stacksection{   
+    
+    padding:0px 8px 25px 8px;    
+    width: 125px;   
+    
+  }
+  
+
+}
