@@ -1757,13 +1757,16 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding-top: 20px;
+  padding-top: 50px;
 }
 .stacksection{
-  border: 1px solid #ff8b0f;
+  border: 2px solid #ff8b0f;
   padding:0px 25px 25px 25px;
   margin: 10px;
   border-radius: 10px;
+  width: 250px;
+  box-shadow: 0px 0px 3px 1px #ff8b0f;
+  background-color: rgba(255, 255, 255, 0.15);
 }
 .stacksection h4, .stacksection span{
   display: block;
@@ -1772,3 +1775,21 @@ body {
 }
 
 
+@media (max-width: 600px) {
+
+  .stacksection{
+    
+    
+    padding:0px 10px 25px 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 136px;
+    
+    
+  }
+  .containerstack{
+    
+    padding-top: 20px;
+  }
+
+}
