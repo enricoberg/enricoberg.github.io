@@ -1753,7 +1753,22 @@ body {
 .orangecolored{
   color:#ff8b0f;
 }
-
-
+.containerstack{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+.stacksection{
+  border: 1px solid #ff8b0f;
+  padding:0px 25px 25px 25px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.stacksection h4, .stacksection span{
+  display: block;
+  width: 100%;
+  text-align: center;
+}
 
 
