@@ -1806,5 +1806,7 @@ body {
     padding-top: 8px;
   }
   
-
+  .about--banner h1{
+    font-size: 10px;
+  }
 }
