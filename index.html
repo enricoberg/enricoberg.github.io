@@ -299,7 +299,7 @@
             <div class="hire">
               <h2>Send me your inquiry</h2>
               <!-- checkout formspree.io for easy form setup -->
-              <form class="work-request">
+              <form class="work-request" id="form" novalidate >
                 <div class="work-request--options">
                   <span class="options-a">
                     <input id="opt-1" type="checkbox" value="web">
@@ -337,11 +337,11 @@
                 </div>
                 <div class="work-request--information">
                   <div class="information-name">
-                    <input id="name" type="text" spellcheck="false">
+                    <input id="username" type="text" spellcheck="false" name="username">
                     <label for="name">Name</label>
                   </div>
                   <div class="information-email">
-                    <input id="email" type="email" spellcheck="false">
+                    <input id="email" type="email" spellcheck="false" name="email">
                     <label for="email">Email</label>
                   </div>
                   
@@ -349,19 +349,20 @@
                 </div>
                 <div class="work-request--information">
                   <div class="information-object">
-                    <input id="object" type="text" spellcheck="false">
+                    <input id="object" type="text" spellcheck="false" name="object">
                     <label for="name">Topic</label>
                   </div>
                   
                 </div>
                 <div class="work-request--information">
                   <div class="information-message">
-                    <input id="message" type="text" spellcheck="false">
+                    <input id="message" type="text" spellcheck="false" name="message">
                     <label for="name" class="messagelabel" >Your message</label>
                   </div>
                   
                 </div>
-                <input type="submit" value="Send Request">
+                <div class="errormessage invisible" style="color: red;">Fill all the fields please</div>
+                <input type="submit" value="Send Request" onclick="submitFormEmailJS();">
               </form>
             </div>
           </li>
@@ -382,5 +383,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
 <script src="assets/js/functions-min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="assets/js/message.js"></script>
+<script src="assets/js/form.js"></script>
 </body>
 </html>

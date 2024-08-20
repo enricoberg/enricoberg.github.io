@@ -42,6 +42,9 @@ html {
 body {
   margin: 0;
 }
+.invisible{
+  display: none;
+}
 article,
 aside,
 details,
@@ -1774,7 +1777,12 @@ body {
   text-align: center;
 }
 
-
+.foxcontainer{
+  height: 390px;
+}
+.fullcontainer{
+  width: 100%;
+}
 @media (max-width: 600px) {
 
   .stacksection{
@@ -1808,5 +1816,10 @@ body {
   
   .about--banner h1{
     font-size: 20px;
+  }
+}
+@media (max-width: 412px) {
+  .foxcontainer{
+    height: 300px;
   }
 }
