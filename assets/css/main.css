@@ -1787,17 +1787,25 @@ body {
 }
 .stacksection{
   border: 2px solid #ff8b0f;
+  color: #7e7e7e;
   padding:0px 25px 25px 25px;
   margin: 10px;
   border-radius: 10px;
   width: 250px;
   box-shadow: 0px 0px 3px 1px #ff8b0f;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.1);  
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 .stacksection h4, .stacksection span{
   display: block;
   width: 100%;
   text-align: center;
+  
+}
+.stacksection:hover{
+  background-color: rgba(255, 255, 255, 0.15);  
+  color: white;
 }
 
 .foxcontainer{
@@ -1807,7 +1815,7 @@ body {
   width: 100%;
 }
 @media (max-width: 600px) {
-
+  
   .stacksection{
     
     
@@ -1845,4 +1853,45 @@ body {
   .foxcontainer{
     height: 300px;
   }
+}
+
+
+.loader {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -100px;
+  left: 62%;
+  
+  animation: rotate 1s linear infinite;
+  
+}
+@media (max-width: 600px) {
+  .loader{
+    bottom: -70px;
+    left: 65%;
+  }
+}
+
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+  border: 5px solid #FFF;
+  animation: prixClipFix 2s linear infinite ;
+}
+
+@keyframes rotate {
+  100%   {transform: rotate(360deg)}
+}
+
+@keyframes prixClipFix {
+    0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+    25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+    50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+    75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+    100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
 }

@@ -11,19 +11,18 @@ function submitFormEmailJS(){
     const pattern = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
     
     event.preventDefault();
-    if(username=="" || email=="" || object=="" || message=="" ) {
-        
+    if(username=="" || email=="" || object=="" || message=="" ) {        
         error.innerHTML="Please fill all the fields";
         if(error.classList.contains("invisible")) error.classList.remove("invisible");
-        return;
-        
+        return;        
     }
     else if(!pattern.test(email)){
         error.innerHTML="Invalid email";
         if(error.classList.contains("invisible")) error.classList.remove("invisible");
         return;
     }
-    
+    let loader=document.querySelector(".loader");
+    if(loader.classList.contains("invisible")) loader.classList.remove("invisible");
     
     
     const form=document.getElementById('form'); 
