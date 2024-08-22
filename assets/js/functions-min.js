@@ -1446,7 +1446,7 @@
       r();
   });
 
-  if(window.screen.width<800){
+  if(window.screen.width<800 && windows.screen.width>415){
     
     let paragraphstitle=document.querySelectorAll(".intro--options p");
     paragraphstitle.forEach(function(element){

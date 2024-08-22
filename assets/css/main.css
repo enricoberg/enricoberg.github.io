@@ -797,6 +797,9 @@ body {
 }
 
 @media (max-width: 492px) { 
+  .intro--banner {
+    height: 330px;
+  }
    .intro--banner img {
   width: 150px;
   height: 150px;
@@ -1859,6 +1862,13 @@ body {
 @media (max-width: 412px) {
   .foxcontainer{
     height: 300px;
+  }
+  h1 {
+    font-size: 1.75em;
+    margin: 0.4em 0;
+  }
+  .intro--options > a {    
+    margin: 0 0 10px 0;
   }
 }
 
